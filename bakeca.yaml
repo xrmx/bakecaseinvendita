@@ -1,0 +1,149 @@
+---
+entita:
+    # luogo
+    - nome:         luogo
+      variabile:    luogo
+      chiave:       luogo
+      tipo_singolo: valore
+
+    # inserzionista
+    - nome:         inserzionista
+      variabile:    inserzionistacase
+      chiave:       inserzionista
+      # http://www.bakeca.it/annunci/vendita-case/inserzionistacase/agenzia/
+      tipo_singolo: slug
+      # http://www.bakeca.it/annunci/vendita-case/inserzionistacase/2182,2183/nope/true/
+      tipo_multi:   csv
+
+    # tipologia immobile
+    - nome:         tipologia immobile
+      variabile:    tipoimmobile
+      chiave:       tipologia
+      # http://www.bakeca.it/annunci/vendita-case/tipoimmobile/bilocale/
+      tipo_singolo: slug
+      # http://www.bakeca.it/annunci/vendita-case/tipoimmobile/52,50/nope/true/
+      tipo_multi:   csv
+
+    # lista di quartieri
+    - nome:         quartiere
+      variabile:    quartiere
+      chiave:       quartieri
+      # http://torino.bakeca.it/annunci/vendita-case/luogo/Torino/quartiere/centro
+      tipo_singolo: slug
+      # http://torino.bakeca.it/annunci/vendita-case/luogo/Torino/quartiere/6,54/nope/true
+      tipo_multi:   csv
+
+    # lista dei possibili valori di metri quadri
+    - nome:         metri quadri
+      variabile:    mqcaseinvendita
+      chiave:       metriquadri
+      # http://torino.bakeca.it/annunci/vendita-case/luogo/Torino/mqcaseinvendita/40-0/nope/true/
+      tipo:         coppia
+
+    # lista dei possibili valori di prezzo
+    - nome:         prezzi
+      variabile:    prezzoimmobile
+      chiave:       prezzi
+      # http://torino.bakeca.it/annunci/vendita-case/luogo/torino/prezzoimmobile/50000-0/
+      tipo:         coppia
+
+inserzionista:
+    - nome: privato
+      id: 2182
+      slug: privato
+
+    - nome: agenzia
+      id: 2183
+      slug: agenzia
+
+tipologia:
+    - nome: monolocale
+      id:   50
+      slug: monolocale
+
+    - nome: bilocale
+      id:   52
+      slug: bilocale
+
+    - nome: trilocale
+      id:   54
+      slug: trilocale
+
+    - nome: quadrilocale
+      id:   56
+      slug: quadrilocale
+
+    - nome: cinque o più locali
+      id:   62
+      slug: cinque-o-piu-locali
+
+    - nome: attico
+      id:   64
+      slug: attico
+
+    - nome: mansarda
+      id:   66
+      slug: mansarda
+
+    - nome: villa
+      id:   68
+      slug: villa
+
+    - nome: altro
+      id:  70
+      slug: 20
+
+    - nome: non specificato
+      id:   unspecified
+      slug: unspecified
+
+quartieri:
+    - nome: aurora / vanchiglia / vanchiglietta
+      id:   6
+      slug: aurora-vanchiglia-vanchiglietta
+
+    - nome: barriera di milano / falchera / regio parco
+      id:   54
+      slug: barrieramilano-falchera-regioparco
+
+    - nome: cenisia / cit turin / san donato
+      id:   142
+      slug: cenisia-citturin-sandonato
+
+    - nome: centro
+      id:   98
+      slug: centro
+
+    - nome: m. di campagna / vallette / borgo vittoria
+      id:   144
+      slug: madonnadicampagna-vallette-borgovittoria
+
+    - nome: mirafiori
+      id:   58
+      slug: mirafiori
+
+    - nome: precollina / collina
+      id:   146
+      slug: precollina-collina
+
+    - nome: parella / pozzo strada / campidoglio
+      id:   32
+      slug: parella-pozzostrada-campidoglio
+
+    - nome: san paolo / crocetta
+      id:   4
+      slug: sanpaolo-crocetta
+
+    - nome: san salvario / valentino / nizza millefonti
+      id:   100
+      slug: sansalvario-valentino-nizzamillefonti
+
+    - nome: santa rita / lingotto
+      id:   2
+      slug: santarita-lingotto
+
+metriquadri: [0, 40, 50, 60, 70, 80, 90, 100, 150, 300, 500, 750, 1000, 1500, 2000, 5000, 10000]
+
+prezzi: [50000, 80000, 100000, 130000, 160000, 190000, 220000, 250000, 300000, 350000, 400000, 450000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000]
+
+luogo: Torino
